@@ -2,12 +2,14 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    margin: 0;
+    margin: 20px 5%;
     color: #333;
     background-color: #fafafa;
 }
 
 header {
+    margin-left: -5.3%;  /* Negate the body margin to keep them full-width */
+    margin-right: -5.3%;
     background: #2c3e50;
     color: #fff;
     padding: 1.5rem;
@@ -21,9 +23,9 @@ header nav a {
 }
 
 .container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 20px;
+    max-width: 1100px; /* Limits how wide your content can get */
+    margin: 0 auto;    /* Centers the container */
+    padding: 0 20px;   /* Adds a "safety" margin on small mobile screens */
 }
 
 .back-link {
@@ -35,7 +37,9 @@ header nav a {
 }
 
 footer {
+    margin-top: 60px;
     text-align: center;
     padding: 2rem;
     background: #eee;
+    border-top: 1px solid #ddd;
 }
