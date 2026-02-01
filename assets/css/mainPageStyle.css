@@ -81,3 +81,20 @@
     font-size: 0.9rem;
     font-weight: bold;
 }
+
+.skills-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.skill-item {
+    background: #2c3e50;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px; /* Pill shape */
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 1px solid #18bc9c;
+}
