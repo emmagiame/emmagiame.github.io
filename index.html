@@ -1,15 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Emma's Portfolio</title>
-    <link rel="stylesheet" href="assets/css/mainPageStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Giamello | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
     <header>
         <h1>Emma Giamello</h1>
-        <p>Junior IT Professional | Systems Enthusiast</p>
+        <p>Junior IT Professional & Systems Enthusiast</p>
+        <nav>
+            <a href="#projects">Projects</a> | 
+            <a href="assets/docs/resume.pdf" target="_blank">Resume</a> | 
+            <a href="mailto:emmagiame@gmail.com">Contact</a>
+        </nav>
     </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a developer interested in the intersection of systems programming and web integrations. 
+           With experience ranging from C-based shell development to Vue.js and Azure cloud solutions, 
+           I enjoy solving complex architectural problems.</p>
+    </section>
+
     <section id="projects">
-        </section>
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <h3>Unix-like Shell (C)</h3>
+                <p>Developed a custom shell in C featuring process management and signal handling for my Operating Systems class.</p>
+                <a href="https://github.com/emmagiame/your-repo" class="btn">View Code</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Vue.js & Azure Web App</h3>
+                <p>A web application utilizing an OData backend and hosted on Azure servers.</p>
+                <a href="#" class="btn">Repository</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Salesforce & Airtable Integration</h3>
+                <p>Automated workflows between CRMs using Zapier during my time at Intrax.</p>
+                <a href="#" class="btn">Details</a> <br>
+                <a href="#" class="btn">Final Presentation</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Emma Giamello | Built with HTML/CSS</p>
+    </footer>
+
 </body>
 </html>
