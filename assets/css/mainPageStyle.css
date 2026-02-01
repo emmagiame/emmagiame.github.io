@@ -98,3 +98,64 @@
     font-weight: bold;
     border: 1px solid #18bc9c;
 }
+
+#experience {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.exp-item {
+    border-left: 3px solid #2c3e50; /* Matches your header color */
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.exp-meta {
+    font-size: 0.9rem;
+    color: #7f8c8d; /* Subtle gray for dates */
+    font-weight: bold;
+}
+
+.exp-item h3 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+#achievements {
+    background: #fdfdfd;
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    border: 1px solid #e1e8ed;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.achievement-icon {
+    font-size: 2rem;
+    background: #eef2f3;
+    padding: 15px;
+    border-radius: 50%;
+    min-width: 60px;
+    text-align: center;
+}
+
+.achievement-content h3 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+    font-size: 1.25rem;
+}
+
+.achievement-content p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
