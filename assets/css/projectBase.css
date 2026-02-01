@@ -1,0 +1,41 @@
+/* Shared Project Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    background-color: #fafafa;
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header nav a {
+    color: #18bc9c;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #eee;
+}

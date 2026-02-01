@@ -1,71 +1,83 @@
-/* General Reset */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+/* --- Homepage Layouts --- */
+
+/* About Section */
+#about {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
 
-/* Header Styling */
-header {
-    background: #2c3e50; /* Dark Slate */
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-}
-
-header nav a {
-    color: #18bc9c; /* Teal */
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-/* Container Sections */
-section {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* Project Grid */
+/* Project Grid (C, Vue, Salesforce) */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
 }
 
-
-
-/* Project Card Styling */
 .project-card {
     background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e1e8ed;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
 
+/* Research Section Styling */
+.research-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #18bc9c; /* Teal accent matches the Nav */
+}
+
+.interest-grid {
+    display: flex;
+    flex-wrap: wrap;       /* Allows cards to move to a new row instead of overlapping */
+    gap: 25px;
+    align-items: stretch;  /* Ensures cards in the same row are the same height */
+}
+
+.interest-card-link {
+    flex: 1 1 300px;       /* Cards grow to fill space but won't get smaller than 300px */
+    text-decoration: none;
+    display: flex;         /* Allows the link to be a flex container for the card */
+}
+
+.interest-card {
+    background: #2c3e50; /* Darker card for visual contrast */
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    height: 100%;
+    transition: background 0.3s ease;
+}
+
+.interest-card:hover {
+    background: #34495e;
+}
+
+.interest-card h3 {
+    color: #18bc9c; /* Teal pops against the dark background */
+    margin-top: 0;
+}
+
+/* Button Styling for Project Cards */
 .btn {
     display: inline-block;
-    background: #2c3e50;
-    color: #fff;
-    padding: 8px 15px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #18bc9c;
+    color: white;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 0.9rem;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 2rem;
-    background: #eee;
-    margin-top: 2rem;
+    font-weight: bold;
 }
