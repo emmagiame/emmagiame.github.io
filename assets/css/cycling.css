@@ -11,6 +11,11 @@
     margin: 20px 0;
 }
 
+.back-link {
+    margin-top: 15px;
+    margin-left: -15%;
+}
+
 .specs ul {
     list-style: none;
     padding: 0;

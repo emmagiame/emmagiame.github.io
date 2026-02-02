@@ -9,6 +9,19 @@
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
 
+/* Adds a consistent 80px gap between every major section */
+section {
+    margin-bottom: 80px; 
+    border-bottom: 1px solid #e0e0e0; /* Subtle light gray line */
+    padding-bottom: 40px;
+}
+
+/* Removes the line from the very last section (Interests) */
+section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 40px;
+}
+
 /* Project Grid (C, Vue, Salesforce) */
 .project-grid {
     display: grid;
@@ -82,11 +95,23 @@
     font-weight: bold;
 }
 
+.skills-category {
+    /* Adds the indent under the category titles */
+    padding-left: 30px; 
+    
+    /* Adds a bit of vertical breathing room below the title */
+    margin-top: 15px;
+}
 .skills-bar {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
+    gap: 12px;
+    
+    /* Adds the indent under the category titles */
+    padding-left: 30px; 
+    
+    /* Adds a bit of vertical breathing room below the title */
+    margin-top: 15px;
 }
 
 .skill-item {
