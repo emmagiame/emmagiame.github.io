@@ -1,14 +1,32 @@
+<script setup>
+import { RouterView } from 'vue-router';
+import Footer from './components/Footer.vue'; // The component we just made
+</script>
+
 <template>
-  <div id="app-layout">
-    <router-view></router-view>
+  <div class="app-container">
+    <RouterView />
+
+    <Footer />
   </div>
 </template>
 
 <style>
-/* Global styles like your teal theme colors can go here */
-body {
-  margin: 0;
-  font-family: var(--p-font-family);
-  background-color: #f9fafb;
+/* src/App.vue */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  /* Ensures the container is at least as tall as the screen */
+  min-height: 100vh; 
+}
+
+/* This is the key: it tells the content to 'grow' to fill 
+   any leftover space, pushing the footer down. */
+.main-content {
+  flex: 1 0 auto; 
+}
+
+footer {
+  flex-shrink: 0; /* Ensures the footer doesn't get squashed */
 }
 </style>

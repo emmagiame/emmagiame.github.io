@@ -1,0 +1,63 @@
+<template>
+  <footer class="footer-container">
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/emmagiame/" target="_blank" rel="noopener" class="social-icon">
+        <i class="pi pi-linkedin"></i>
+      </a>
+      
+      <a href="https://github.com/emmagiame" target="_blank" rel="noopener" class="social-icon">
+        <i class="pi pi-github"></i>
+      </a>
+      
+      <a href="/Emma_Giamello_Resume.pdf" target="_blank" class="resume-btn">
+        <i class="pi pi-file-pdf mr-2"></i>
+        Download Resume
+      </a>
+    </div>
+    
+    <p class="copyright">
+      &copy; 2026 Emma Giamello | University of Portland
+    </p>
+  </footer>
+</template>
+
+<style scoped>
+/* src/components/Footer.vue */
+.footer-container {
+  /* Smaller vertical padding (changed from 4rem to 1.5rem) */
+  padding: 1.5rem 1rem; 
+  background: #fdfdfd; 
+  text-align: center;
+  border-top: 1px solid #f3f4f6;
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; /* Tighter gap */
+  margin-bottom: 0.75rem;
+}
+
+.social-icon i {
+  font-size: 1.2rem; /* Smaller icons */
+  color: #6b7280;
+}
+
+.resume-btn {
+  font-size: 0.85rem; /* Smaller text */
+  padding: 0.4rem 0.8rem;
+  background: #0d9488;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.copyright {
+  font-size: 0.75rem; /* Fine print size */
+  color: #9ca3af;
+  margin: 0;
+}
+</style>
