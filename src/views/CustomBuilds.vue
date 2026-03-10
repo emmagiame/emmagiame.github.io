@@ -5,28 +5,28 @@ import Button from 'primevue/button';
 const buildCategories = [
   {
     title: 'Automotive Modding',
-    image: '/car-mod.jpg', 
+    image: null, // Placeholder for future car mod images 
     description: 'Custom performance and aesthetic modifications to my car, focusing on mechanical reliability and clean integration.',
     tech: ['Mechanical', 'Electrical', 'Hardware'],
     link: '/projects/custombuilds/car'
   },
   {
     title: 'Bicycle Engineering',
-    image: '/bike-mod.jpg',
+    image: null, // Placeholder for future bike mod images
     description: 'Customizing and maintaining my bike for optimal performance, reflecting my interest in mechanical systems and biking.',
     tech: ['Mechanical', 'Drivetrain', 'Biking'],
     link: '/projects/custombuilds/bike'
   },
   {
     title: 'Custom Keyboards',
-    image: '/keyboard.jpg',
+    image: null, // Placeholder for future keyboard images
     description: 'Designing and building custom mechanical keyboards, including soldering, switch lubing, and firmware flashing.',
     tech: ['Soldering', 'Firmware', 'Electronics'],
     link: '/projects/custombuilds/keyboard'
   },
   {
     title: 'PC Architecture',
-    image: '/pc-build.jpg',
+    image: null, // Placeholder for future PC build images
     description: 'Designing and assembling high-performance PC systems with a focus on cable management and airflow optimization.',
     tech: ['Hardware', 'Cable Mgmt', 'Thermal Design'],
     link: '/projects/custombuilds/pc'
