@@ -4,8 +4,9 @@ import Footer from './components/Footer.vue'; // The component we just made
 </script>
 
 <template>
-  <div class="app-container">
-    <RouterView />
+  <div class="min-h-screen flex flex-col">
+    <main class="flex-grow pb-20"> <RouterView />
+    </main>
 
     <Footer />
   </div>

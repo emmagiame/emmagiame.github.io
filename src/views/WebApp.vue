@@ -5,10 +5,24 @@ import Button from 'primevue/button';
 const projects = [
   {
     title: 'Client Management Web App',
-    description: 'A full-stack application built with Vue3 and ASP.NET, providing a streamlined interface for managing client data.',
-    tech: ['Vue3', 'ASP.NET', 'Azure', 'SQL'],
+    description: 'As my final project, my team and I built a full-stack application built with Vue3, PrimeVue and ASP.NET, providing a streamlined interface for managing client data.',
+    tech: ['Collaboration', 'Vue3', 'ASP.NET', 'Azure', 'SQL'],
     buttonLabel: 'View Github Repo',
     link: 'https://github.com/Cosmos-DataTechCapStone/Cosmos'
+  },
+  {
+    title: 'DIII Ultimate Frisbee National Championship',
+    description: 'Contributed to the University of Portland’s DIII National Championship-winning Ultimate Frisbee team, demonstrating teamwork, strategy, and leadership on a national stage.',
+    tech: ['Teamwork', 'Strategy', 'Leadership'],
+    buttonLabel: 'View School Shoutout',
+    link: 'https://ww1.up.edu/news/2024/05/uproar-ncaa-champions.html'
+  },
+  {
+    title: 'Coding up a Game',
+    description: 'Built a 2d Version of Uno with a team, implementing game logic, user interface, and multiplayer functionality to create an engaging gaming experience.',
+    tech: ['Collaboration', 'Game Development', 'User Interface'],
+    buttonLabel: 'View Github Repo',
+    link: 'https://github.com/emmagiame/UnoGame'
   },
  
 ];
@@ -18,8 +32,8 @@ const projects = [
   <div class="page-container">
     <header class="text-center mb-12">
       <Button label="Back to Home" icon="pi pi-arrow-left" text @click="$router.push('/')" class="mb-4" />
-      <h1 class="text-4xl font-bold text-gray-800">Full-Stack Developer</h1>
-      <p class="text-gray-600 mt-2">Building scalable backends and modern frontends.</p>
+      <h1 class="text-4xl font-bold text-gray-800">Team Player</h1>
+      <p class="text-gray-600 mt-2">Building and reaching goals through collaboration.</p>
     </header>
 
     <div class="grid-layout">

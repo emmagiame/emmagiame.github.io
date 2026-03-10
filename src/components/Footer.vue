@@ -24,12 +24,10 @@
 <style scoped>
 /* src/components/Footer.vue */
 .footer-container {
-  /* Smaller vertical padding (changed from 4rem to 1.5rem) */
-  padding: 1.5rem 1rem; 
-  background: #fdfdfd; 
-  text-align: center;
-  border-top: 1px solid #f3f4f6;
-  width: 100%;
+    margin-top: 15rem; /* Adjust this value to your liking */
+    padding-top: 2rem;
+    border-top: 1px solid #eee; /* Optional: adds a subtle separator line */
+    width:100%;
 }
 
 .social-links {

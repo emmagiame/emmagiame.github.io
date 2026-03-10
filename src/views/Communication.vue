@@ -10,6 +10,14 @@ const projects = [
     tech: ['User Support', 'Problem Solving', 'Documentation'],
     buttonLabel: 'View Experience'
   },
+  {
+    title: 'Final Project: Client Management Web App',
+    description: 'As my final project, my team and I built a full-stack application. While building this project not only was the code important but how we communicated and collaborated was just as critical. We had to work together to divide up the work, communicate our progress, and integrate our code together.',
+    tech: ['Collaboration', 'Vue3', 'ASP.NET', 'Azure', 'SQL'],
+    buttonLabel: 'View Github Repo',
+    link: 'https://github.com/Cosmos-DataTechCapStone/Cosmos'
+  },
+
  
 ];
 </script>
@@ -19,7 +27,7 @@ const projects = [
     <header class="text-center mb-12">
       <Button label="Back to Home" icon="pi pi-arrow-left" text @click="$router.push('/')" class="mb-4" />
       <h1 class="text-4xl font-bold text-gray-800">Technical Communicator</h1>
-      <p class="text-gray-600 mt-2">Bridging the gap between complex systems and user needs.</p>
+      <p class="text-gray-600 mt-2">Bridging the gap between computers and human users.</p>
     </header>
 
     <div class="grid-layout">
