@@ -9,7 +9,7 @@
         <i class="pi pi-github"></i>
       </a>
       
-      <a href="/Users/emmagiamello/Library/Mobile Documents/com~apple~CloudDocs/Other/emmagiame.github.io/src/assets/docs/Emma_Giamello_Resume.pdf" target="_blank" class="resume-btn">
+      <a :href="resumePdf" target="_blank" class="resume-btn">
         <i class="pi pi-file-pdf mr-2"></i>
         Download Resume
       </a>
@@ -20,6 +20,10 @@
     </p>
   </footer>
 </template>
+
+<script>
+import resumePdf from '@/src/docs/Emma_Giamello_Resume.pdf';
+</script>
 
 <style scoped>
 /* src/components/Footer.vue */
