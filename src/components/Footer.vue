@@ -9,7 +9,7 @@
         <i class="pi pi-github"></i>
       </a>
       
-      <a href="/Emma_Giamello_Resume.pdf" target="_blank" class="resume-btn">
+      <a href="/Users/emmagiamello/Library/Mobile Documents/com~apple~CloudDocs/Other/emmagiame.github.io/src/assets/docs/Emma_Giamello_Resume.pdf" target="_blank" class="resume-btn">
         <i class="pi pi-file-pdf mr-2"></i>
         Download Resume
       </a>
