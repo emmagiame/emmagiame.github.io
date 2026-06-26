@@ -5,7 +5,7 @@ import Button from 'primevue/button';
 
 const projects = [
   {
-    title: 'IT Help Desk Strategy',
+    title: 'IT Help Desk Assistant',
     description: 'Providing technical support at the University of Portland, translating complex system issues into actionable user solutions.',
     tech: ['User Support', 'Problem Solving', 'Documentation'],
     buttonLabel: 'View Experience'

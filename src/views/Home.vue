@@ -5,21 +5,21 @@ import Button from 'primevue/button';
 const hireReasons = [
   {
     title: 'Adaptive Problem Solver',
-    desc: 'Leveraging systems programming in C and Java to deconstruct complex technical hurdles and build optimized solutions.',
+    desc: 'Leveraging systems programming in Python and Java to deconstruct complex technical hurdles and build optimized solutions.',
     link: '/projects/problem-solving', 
     icon: 'pi-lightbulb'
-  },
-  {
-    title: 'Collaborative Teammate',
-    desc: 'Bringing the same discipline and communication found in D-III National Championship Ultimate Frisbee to cross-functional dev teams.',
-    link: '/projects/webapp',
-    icon: 'pi-users'
   },
   {
     title: 'Technical Communicator',
     desc: 'Bridging the gap between complex IT infrastructure and user needs, refined through experience as an IT Help Desk Assistant.',
     link: '/projects/communication',
     icon: 'pi-comments'
+  },
+  {
+    title: 'Collaborative Teammate',
+    desc: 'Bringing the same discipline and communication found in D-III National Championship Ultimate Frisbee to cross-functional dev teams.',
+    link: '/projects/teamwork',
+    icon: 'pi-users'
   }
 ];
 
@@ -38,7 +38,7 @@ const additionalInterests = [
   }, 
   {
     title: 'Custom Builds & Modding',
-    desc: 'Planning out custom modifications and builds in all forms and functions. From modding my car and bike to building custom keyboard and PC.',
+    desc: 'Planning out custom modifications and builds in all forms and functions. From modding my car and bike to building custom keyboards and electronic projects.',
     link: '/projects/custombuilds',
     icon: 'pi-wrench'
   }
@@ -50,9 +50,8 @@ const additionalInterests = [
     <header class="text-center mb-8">
       <h1 class="text-4xl font-bold mb-4">Emma Giamello</h1> 
       <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-        Computer Science student at the University of Portland specializing in systems programming and web integrations.
+        Software Engineer dedicated to designing seamless full-stack applications and data integrations. Currently expanding my expertise in technical leadership and scalable systems through an M.S. in Operations and Technology Management.
       </p>
-      <br>
       <br>
     </header>
 
@@ -85,6 +84,8 @@ const additionalInterests = [
     </section>
 
     <section class="mb-12">
+      <br>
+      <br>
     <h3 class="text-2xl font-semibold mb-6 text-center">Additional Interests</h3>
         
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -108,7 +109,7 @@ const additionalInterests = [
             </template>
         </Card>
       </div>
-    </div><br><br><br><br><br>
+    </div><br><br><br>
     </section>
   </div>
 </template>

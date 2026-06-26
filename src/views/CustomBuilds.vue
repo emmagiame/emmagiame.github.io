@@ -23,14 +23,14 @@ const buildCategories = [
     description: 'Designing and building custom mechanical keyboards, including soldering, switch lubing, and firmware flashing.',
     tech: ['Soldering', 'Firmware', 'Electronics'],
     link: '/projects/custombuilds/keyboard'
-  },
-  {
-    title: 'PC Architecture',
-    image: null, // Placeholder for future PC build images
-    description: 'Designing and assembling high-performance PC systems with a focus on cable management and airflow optimization.',
-    tech: ['Hardware', 'Cable Mgmt', 'Thermal Design'],
-    link: '/projects/custombuilds/pc'
   }
+  //{
+  //  title: 'PC Architecture',
+  //  image: null, // Placeholder for future PC build images
+  //  description: 'Designing and assembling high-performance PC systems with a focus on cable management and airflow optimization.',
+  //  tech: ['Hardware', 'Cable Mgmt', 'Thermal Design'],
+  //  link: '/projects/custombuilds/pc'
+  //}
 ];
 </script>
 

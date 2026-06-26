@@ -5,7 +5,7 @@ import ProblemSolving from './views/ProblemSolving.vue';
 import Communication from './views/Communication.vue';
 import Woodworking from './views/Woodworking.vue';
 import CustomBuilds from './views/CustomBuilds.vue';
-import WebApp from './views/WebApp.vue'; 
+import Teamwork from './views/Teamwork.vue'; 
 import CarBuild from './views/builds/CarBuild.vue';
 import BikeBuild from './views/builds/BikeBuild.vue';
 import KeyboardBuild from './views/builds/KeyboardBuild.vue';
@@ -14,7 +14,7 @@ import PCBuild from './views/builds/PCBuild.vue';
 const routes = [
   { path: '/', component: Home },
   { path: '/projects/problem-solving', component: ProblemSolving },
-  { path: '/projects/webapp', component: WebApp },
+  { path: '/projects/teamwork', component: Teamwork },
   { path: '/projects/communication', component: Communication },
   { path: '/projects/prototyping', component: Prototyping },
   { path: '/projects/woodworking', component: Woodworking },
