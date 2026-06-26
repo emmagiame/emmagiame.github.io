@@ -16,7 +16,7 @@
     </div>
     
     <p class="copyright">
-      &copy; 2026 Emma Giamello | University of Portland
+      Emma Giamello
     </p>
   </footer>
 </template>
