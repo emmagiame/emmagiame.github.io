@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import resumePdf from '@/src/docs/Emma_Giamello_Resume.pdf';
+import resumePdf from '/src/docs/Emma_Giamello_Resume.pdf';
 </script>
 
 <style scoped>
