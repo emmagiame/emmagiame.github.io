@@ -5,19 +5,19 @@ import Button from 'primevue/button';
 const hireReasons = [
   {
     title: 'Adaptive Problem Solver',
-    desc: 'Leveraging systems programming in Python and Java to deconstruct complex technical hurdles and build optimized solutions.',
+    desc: 'Deconstructing technical hurdles across full-stack systems, enterprise workflows, and embedded hardware to build reliable, optimized solutions.',
     link: '/projects/problem-solving', 
     icon: 'pi-lightbulb'
   },
   {
     title: 'Technical Communicator',
-    desc: 'Bridging the gap between complex IT infrastructure and user needs, refined through experience as an IT Help Desk Assistant.',
+    desc: 'Translating complex system architectures into user-focused solutions, refined through consultative IT support and client-facing delivery.',
     link: '/projects/communication',
     icon: 'pi-comments'
   },
   {
     title: 'Collaborative Teammate',
-    desc: 'Bringing the same discipline and communication found in D-III National Championship Ultimate Frisbee to cross-functional dev teams.',
+    desc: 'Bringing the discipline, communication, and resilience forged as a D-III National Champion athlete to cross-functional engineering teams.',
     link: '/projects/teamwork',
     icon: 'pi-users'
   }
@@ -26,19 +26,19 @@ const hireReasons = [
 const additionalInterests = [
   {
     title: 'Mechanical Design & Prototyping',
-    desc: 'Advanced SolidWorks modeling from initial thread design to 3D-printed physical testing.',
+    desc: 'Advanced SolidWorks modeling from initial thread design to 3D-printed physical tolerance testing.',
     link: '/projects/prototyping',
     icon: 'pi-cog'
   },
   {
-    title: 'Woodworking & Lattice Structures',
-    desc: 'Designing and constructing intricate wooden frameworks and lattice systems.',
+    title: 'Woodworking & Precision Structures',
+    desc: 'Designing and manufacturing custom architectural wooden frameworks, maintaining tight tolerances and quality assurance.',
     link: '/projects/woodworking',
     icon: 'pi-table'
   }, 
   {
-    title: 'Custom Builds & Modding',
-    desc: 'Planning out custom modifications and builds in all forms and functions. From modding my car and bike to building custom keyboards and electronic projects.',
+    title: 'Custom Builds & Engineering',
+    desc: 'Hands-on hardware builds and mods—from standalone embedded e-paper readers to automotive electrical and bicycle drivetrain tuning.',
     link: '/projects/custombuilds',
     icon: 'pi-wrench'
   }
@@ -49,165 +49,132 @@ const additionalInterests = [
   <div class="portfolio-container p-6">
     <header class="text-center mb-8">
       <h1 class="text-4xl font-bold mb-4">Emma Giamello</h1> 
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-        Software Engineer dedicated to designing seamless full-stack applications and data integrations. Currently expanding my expertise in technical leadership and scalable systems through an M.S. in Operations and Technology Management.
+      <p class="hero-description text-gray-600 max-w-3xl mx-auto">
+        Technologist and graduate student bridging software systems, embedded hardware, and operational strategy. Combining a B.S. in Computer Science with an M.S. in Operations and Technology Management to translate complex technology into real-world impact.
       </p>
       <br>
     </header>
 
-    <section class="mb-12">
-    <h2 class="text-2xl font-semibold mb-6 text-center">Why Hire Me?</h2>
-        
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="hire-reasons-container">
-        <Card v-for="reason in hireReasons" :key="reason.title" class="hire-card shadow-lg flex flex-col h-full">
-            <template #title>
-              <div class="flex items-center justify-center mb-2">
-                <i :class="['pi', reason.icon, 'text-teal-500 text-2xl']"></i>
-              </div>
-              <div class="text-center text-lg font-bold">{{ reason.title }}</div>
-            </template>
+    <!-- Why Hire Me Section -->
+    <section class="section-container mb-20">
+      <h2 class="section-title">Why Hire Me?</h2>
+      <div class="cards-grid">
+        <Card v-for="reason in hireReasons" :key="reason.title" class="custom-card shadow-md flex flex-col h-full">
+          <template #title>
+            <div class="flex items-center justify-center mb-3">
+              <i :class="['pi', reason.icon, 'text-teal-600 text-3xl']"></i>
+            </div>
+            <div class="text-center text-lg font-bold text-gray-800">{{ reason.title }}</div>
+          </template>
 
-            <template #content>
-              <p class="text-center text-gray-700 leading-relaxed">{{ reason.desc }}</p>
-            </template>
+          <template #content>
+            <p class="text-center text-gray-600 leading-relaxed card-text">{{ reason.desc }}</p>
+          </template>
 
-            <template #footer>
-              <div class="flex justify-center mt-auto">
-                <Button label="See Evidence" icon="pi pi-arrow-right" link @click="$router.push(reason.link)" />
-              </div>
-            </template>
+          <template #footer>
+            <div class="flex justify-center mt-auto pt-4">
+              <Button label="See Evidence" icon="pi pi-arrow-right" link @click="$router.push(reason.link)" />
+            </div>
+          </template>
         </Card>
       </div>
-    </div>
-    <br>
     </section>
 
-    <section class="mb-12">
-      <br>
-      <br>
-    <h3 class="text-2xl font-semibold mb-6 text-center">Additional Interests</h3>
-        
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="additional-interests-container">
-        <Card v-for="interest in additionalInterests" :key="interest.title" class="interest-card shadow-lg flex flex-col h-full">
-            <template #title>
-              <div class="flex items-center justify-center mb-2">
-                <i :class="['pi', interest.icon, 'text-teal-500 text-2xl']"></i>
-              </div>
-              <div class="text-center text-lg font-bold">{{ interest.title }}</div>
-            </template>
+    <!-- Additional Interests Section -->
+    <section class="section-container mb-16">
+      <h3 class="section-title">Additional Interests & Engineering</h3>
+      <div class="cards-grid">
+        <Card v-for="interest in additionalInterests" :key="interest.title" class="custom-card shadow-md flex flex-col h-full">
+          <template #title>
+            <div class="flex items-center justify-center mb-3">
+              <i :class="['pi', interest.icon, 'text-teal-600 text-3xl']"></i>
+            </div>
+            <div class="text-center text-lg font-bold text-gray-800">{{ interest.title }}</div>
+          </template>
 
-            <template #content>
-              <p class="text-center text-gray-700 leading-relaxed">{{ interest.desc }}</p>
-            </template>
+          <template #content>
+            <p class="text-center text-gray-600 leading-relaxed card-text">{{ interest.desc }}</p>
+          </template>
 
-            <template #footer>
-              <div class="flex justify-center mt-auto">
-                <Button label="View" icon="pi pi-arrow-right" link @click="$router.push(interest.link)" />
-              </div>
-            </template>
+          <template #footer>
+            <div class="flex justify-center mt-auto pt-4">
+              <Button label="View Projects" icon="pi pi-arrow-right" link @click="$router.push(interest.link)" />
+            </div>
+          </template>
         </Card>
       </div>
-    </div><br><br><br>
     </section>
   </div>
 </template>
 
 <style scoped>
 .portfolio-container { 
-    max-width: 2000px; margin: 0 auto; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
-h2 {
-  font-size: 2.5rem; 
-  font-weight: 800;
-}
-
-h3 {
-  font-size: 2.0rem; 
-  font-weight: 800;
-}
-
-p {
+.hero-description {
   font-size: 1.25rem;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-.hire-reasons-container {
+.section-title {
+  font-size: 2.25rem; 
+  font-weight: 800;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 2.5rem;
+}
+
+.cards-grid {
   display: flex;
   flex-direction: row; 
   justify-content: center;
   align-items: stretch;
-  gap: 20px;
+  gap: 1.5rem;
   width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
 }
 
-.hire-card {
+.custom-card {
   flex: 1;
-  min-width: 250px; 
+  min-width: 260px; 
   display: flex;
   flex-direction: column;
-  border-bottom: 5px solid #52aebb;
+  border-bottom: 4px solid #0d9488;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-@media (max-width: 768px) {
-  .hire-reasons-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .hire-card {
-    width: 100%;
-    max-width: 400px;
-  }
-  .additional-interests-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .interest-card {
-    width: 100%;
-    max-width: 400px;
-  }
+.custom-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.1);
 }
 
-.hire-card:hover {
-  transform: translateY(-10px);
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 :deep(.p-card-body) {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
+  padding: 1.5rem;
 }
 
 :deep(.p-card-content) {
   flex-grow: 1;
 }
 
-.additional-interests-container {
-  display: flex;
-  flex-direction: row; 
-  justify-content: center;
-  align-items: stretch;
-  gap: 20px;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.interest-card {
-  flex: 1;
-  min-width: 250px; 
-  display: flex;
-  flex-direction: column;
-  border-bottom: 5px solid #52aebb;
-}
-
-
-
-.interest-card:hover {
-  transform: translateY(-10px);
+@media (max-width: 768px) {
+  .cards-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .custom-card {
+    width: 100%;
+    max-width: 420px;
+  }
 }
 </style>
