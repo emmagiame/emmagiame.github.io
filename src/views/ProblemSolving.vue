@@ -5,23 +5,23 @@ import Button from 'primevue/button';
 const projects = [
   {
     title: 'Unix-like Shell Implementation',
-    description: 'Developed a custom shell in C, implementing process management, I/O redirection, and signal handling.',
-    tech: ['C', 'Systems Programming', 'Linux'],
-    buttonLabel: 'View Github Repo',
-    link:'https://github.com/emmagiame/basicShell_cs334'
+    description: 'Engineered a custom POSIX-compliant shell in C, implementing process creation and execution (fork/exec), background process handling, I/O redirection, and custom POSIX signal handling.',
+    tech: ['C', 'Systems Programming', 'Linux Kernel API', 'Process Management'],
+    buttonLabel: 'View GitHub Repo',
+    link: 'https://github.com/emmagiame/basicShell_cs334'
   },
   {
-    title: 'Salesforce to Airtable Integration',
-    description: 'Showed how to connect Salesforce and Airtable using Zapier, in order to use Salesforce as a data management tool and Airtable as a lightweight project and workflow management tool.',
-    tech: ['Salesforce', 'API', 'Logic Design'],
-    buttonLabel: 'View Company', 
+    title: 'Enterprise CRM & Workflow Automation',
+    description: 'Designed and deployed an automated integration pipeline syncing active records between Salesforce and Airtable. Resolved operational bottlenecks by eliminating manual data entry and dynamically linking files to tasks.',
+    tech: ['Salesforce CRM', 'API Automation', 'Airtable', 'Workflow Logic'],
+    buttonLabel: 'View Company Overview', 
     link: 'https://www.intraxinc.com/'
   },
   {
-    title: 'Created Prototypes for custom container design',
-    description: 'Designed and iterated on prototypes for a custom container, focusing on thread engagement and fitment using SolidWorks.',
-    tech: ['SolidWorks', 'Technical Drawing'],
-    buttonLabel: 'View Project', 
+    title: 'Custom Container Design & Prototyping',
+    description: 'Designed, modeled, and iterated custom mechanical containers in SolidWorks. Conducted tolerance analysis, thread engagement optimization, and physical fitment validation via 3D print testing.',
+    tech: ['SolidWorks', 'Rapid Prototyping', 'Tolerance Analysis', 'CAD Modeling'],
+    buttonLabel: 'View Project Details', 
     link: '/projects/prototyping'
   }
 ];
@@ -32,7 +32,9 @@ const projects = [
     <header class="text-center mb-12">
       <Button label="Back to Home" icon="pi pi-arrow-left" text @click="$router.push('/')" class="mb-4" />
       <h1 class="text-4xl font-bold text-gray-800">Adaptive Problem Solver</h1>
-      <p class="text-gray-600 mt-2">Technical evidence of complex hurdle navigation.</p>
+      <p class="text-gray-600 mt-2 text-lg">
+        Demonstrated technical problem-solving across systems programming, workflow automation, and mechanical iteration.
+      </p>
     </header>
 
     <div class="grid-layout">
@@ -60,6 +62,8 @@ const projects = [
 }
 
 .grid-layout > * {
-  flex: 0 1 350px; /* This ensures the bottom cards center correctly! */
+  flex: 0 1 350px;
+  display: flex;
+  flex-direction: column;
 }
 </style>
