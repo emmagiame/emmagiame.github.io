@@ -7,22 +7,22 @@ import Spoon from '../assets/images/spoon.png';
 
 const projects = [
   {
-    title: 'Intricate Lattice Systems',
+    title: 'Intricate Architectural Lattice Systems',
     image: ComplexLattice, 
-    description: 'Designed and constructed complex wooden lattice frameworks, focusing on geometric symmetry and structural integrity.',
-    tech: ['Lattice Design', 'Joinery', 'Precision Cutting']
+    description: 'Engineered complex geometric lattice frameworks with tight repetitive tolerances. Applied precise half-lap joinery and dimensional indexing to ensure long-term structural integrity and symmetry.',
+    tech: ['Precision Machining', 'Half-Lap Joinery', 'Tolerance Control', 'Lattice Design']
   },
   {
-    title: 'Custom Wooden Frameworks',
+    title: 'Custom Exterior Frameworks & Joinery',
     image: StainedLattice, 
-    description: 'Developed high-end structural frames using traditional woodworking techniques combined with modern CAD planning.',
-    tech: ['Frameworks', 'CAD', 'Traditional Joinery']
+    description: 'Built high-durability wooden frameworks incorporating CAD dimensioning and traditional joinery. Evaluated wood grain orientation, natural expansion tolerances, and multi-stage protective finishing.',
+    tech: ['CAD Layout', 'Grain Selection', 'Exterior Finishing', 'Structural Framing']
   },
   {
-    title: 'Functional Wood Art',
+    title: 'Hand-Carved Functional Utensils',
     image: Spoon,
-    description: 'Exploring the intersection of function and form through custom-built furniture and structural art pieces.',
-    tech: ['Furniture Design', 'Finishing', 'Material Science']
+    description: 'Explored ergonomic carving and grain flow through functional wooden utensils. Focused on grain strength, smooth tactile transitions, and food-safe oil/wax finishes.',
+    tech: ['Hand Tooling', 'Ergonomic Carving', 'Grain Flow Analysis', 'Food-Safe Finishing']
   }
 ];
 </script>
@@ -32,9 +32,9 @@ const projects = [
     <header class="text-center mb-12">
       <Button label="Back to Home" icon="pi pi-arrow-left" text @click="$router.push('/')" class="mb-4" />
       
-      <h1 class="text-4xl font-bold text-gray-800">Woodworking & Lattice Structures</h1>
-      <p class="text-gray-600 mt-2 max-w-2xl mx-auto">
-        Merging mechanical precision with organic materials to create intricate structural systems.
+      <h1 class="text-4xl font-bold text-gray-800">Woodworking & Precision Structures</h1>
+      <p class="text-gray-600 mt-2 text-lg max-w-2xl mx-auto">
+        Merging mechanical precision, tight tolerances, and craftsmanship across custom architectural frameworks and functional hand builds.
       </p>
     </header>
 
@@ -49,7 +49,6 @@ const projects = [
 </template>
 
 <style scoped>
-/* Exact CSS Mirror from Prototyping.vue to ensure a perfect match */
 .page-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -63,8 +62,9 @@ const projects = [
   gap: 2rem;
 }
 
-/* This is the secret to centering the 'orphaned' bottom cards */
 .grid-layout > * {
-  flex: 0 1 350px; 
+  flex: 0 1 350px;
+  display: flex;
+  flex-direction: column;
 }
 </style>
