@@ -116,6 +116,7 @@ const additionalInterests = [
 .hero-description {
   font-size: 1.25rem;
   line-height: 1.7;
+  color: #4b5563;
 }
 
 .section-title {
@@ -154,6 +155,7 @@ const additionalInterests = [
 .card-text {
   font-size: 1rem;
   line-height: 1.6;
+  color: #4b5563;
 }
 
 :deep(.p-card-body) {
@@ -165,6 +167,34 @@ const additionalInterests = [
 
 :deep(.p-card-content) {
   flex-grow: 1;
+}
+
+/* ================= DARK MODE OVERRIDES ================= */
+@media (prefers-color-scheme: dark) {
+  .section-title {
+    color: #f3f4f6; /* Light text for section headings */
+  }
+
+  .hero-description {
+    color: #9ca3af; /* Muted light gray for the subtitle */
+  }
+
+  .custom-card {
+    background: #1f2937 !important; /* Sleek dark card background matching your theme */
+    border: 1px solid #374151;     /* Subtle border so cards stand out */
+    border-bottom: 4px solid #0d9488; /* Keeps your teal accent line intact */
+  }
+
+  /* Target PrimeVue card text slots to make them light-colored in dark mode */
+  :deep(.p-card-title), 
+  .custom-card div[class*="text-gray-800"] {
+    color: #f9fafb !important;
+  }
+
+  :deep(.p-card-content p), 
+  .card-text {
+    color: #d1d5db !important;
+  }
 }
 
 @media (max-width: 768px) {

@@ -1,11 +1,20 @@
+/* ================= Root Variables ================= */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
+  /* Light Theme Defaults */
+  --bg-color: #ffffff;
+  --text-main: #213547;
+  --card-bg: #ffffff;
+  --card-text: #1f2937;
+  --card-subtext: #4b5563;
+  --border-color: #e5e7eb;
+
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--text-main);
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,6 +22,73 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ================= Dark Mode Global Overrides ================= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #18181b;          /* Sleek dark background */
+    --text-main: rgba(255, 255, 255, 0.87);
+    --card-bg: rgb(31, 41, 55);           /* Dark slate card background */
+    --card-text: #f9fafb;         /* Crisp white for card titles */
+    --card-subtext: #d1d5db;      /* Light gray for card body descriptions */
+    --border-color: rgb(55, 65, 81);
+  }
+}
+
+/* ================= Global Layout & Elements ================= */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800; /* Bold for main headings */
+  
+}
+
+/* Global Headings */
+h1, h2, h3, h4 {
+  color: var(--text-main);
+}
+
+/* ================= Global PrimeVue Card & Component Fixes ================= */
+/* This automatically styles any PrimeVue Card across all your views */
+.p-card, 
+.custom-card, 
+.spec-card, 
+.mod-card {
+  background-color: var(--card-bg) !important;
+  color: var(--card-text) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Ensure card titles turn light in dark mode */
+.p-card-title, 
+[class*="text-gray-800"] {
+  color: var(--card-text) !important;
+}
+
+/* Ensure card descriptions/paragraphs turn readable gray in dark mode */
+.p-card-content p, 
+.card-text, 
+[class*="text-gray-600"], 
+[class*="text-gray-700"] {
+  color: var(--card-subtext) !important;
+}
+
+/* ================= Links & Buttons ================= */
 a {
   font-weight: 500;
   color: #87a6f7;
@@ -22,20 +98,6 @@ a:hover {
   color: #9eb7f6;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  color: black;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -43,7 +105,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--card-bg);
+  color: var(--text-main);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -55,22 +118,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.card {
-  padding: 2em;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
   a:hover {
     color: #747bff;
   }
